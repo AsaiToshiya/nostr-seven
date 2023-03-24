@@ -1,4 +1,4 @@
-<body id=B>
+<body id=B onload=W.nostr.getPublicKey().then(m)>
   <script>
     // JSON オブジェクトのエイリアス
     J = JSON;
@@ -107,8 +107,5 @@
           ][k]()
         }
       }[m[3]]())
-    };
-
-    // ページが読み込まれたら処理を開始する
-    W.onload = _ => W.nostr.getPublicKey().then(m)
+    }
   </script>

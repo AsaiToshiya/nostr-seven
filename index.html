@@ -1,10 +1,10 @@
-<body id=B><script>J=JSON;P=J.parse;W=this;g=e=>e.created_at;m=p=>{a=p&&[p];w.
-readyState?s(3):setTimeout(m,500)};s=l=>{e=[];k=l;w.send(J.stringify(["REQ","a"
-,{authors:a,kinds:[k],limit:[,200][k]}]))};w=new WebSocket("wss://nos.lol");w.
-onmessage=h=>{[m,,n]=P(h.data);({N:_=>e.push(n),E:_=>{e.sort((a,b)=>g(b)-g(a));
-[_=>{p=e;s(1)},_=>e.map(q=>{a=P(p.find(p=>p.pubkey==q.pubkey)?.content??"{}");B
-.innerHTML+=`<p>${a.display_name??a.displayName}@${a.name??a.username}</p><p>${
-"&amp;1&lt;1&gt;1&nbsp;1<br>".split(1).reduce((a,o,i)=>a.split("&<> \n"[i]).
-join(o),q.content)}</p><p>${new Date(g(q)*1e3).toLocaleString()}</p>`}),,_=>{a=
-e[0].tags.map(t=>t[1]);s(0);}][k]()}}[m[3]]())};W.onload=_=>W.nostr.
-getPublicKey().then(m)</script>
+<body id=B onload=W.nostr.getPublicKey().then(m)><script>J=JSON;P=J.parse;W=
+this;g=e=>e.created_at;m=p=>{a=p&&[p];w.readyState?s(3):setTimeout(m,500)};s=
+l=>{e=[];k=l;w.send(J.stringify(["REQ","a",{authors:a,kinds:[k],limit:[,200][k]
+}]))};w=new WebSocket("wss://nos.lol");w.onmessage=h=>{[m,,n]=P(h.data);({N:_=>
+e.push(n),E:_=>{e.sort((a,b)=>g(b)-g(a));[_=>{p=e;s(1)},_=>e.map(q=>{a=P(p.find
+(p=>p.pubkey==q.pubkey)?.content??"{}");B.innerHTML+=`<p>${a.display_name??a.
+displayName}@${a.name??a.username}</p><p>${"&amp;1&lt;1&gt;1&nbsp;1<br>".split(
+1).reduce((a,o,i)=>a.split("&<> \n"[i]).join(o),q.content)}</p><p>${new Date(g(
+q)*1e3).toLocaleString()}</p>`}),,_=>{a=e[0].tags.map(t=>t[1]);s(0);}][k]()}}[m
+[3]]())}</script>
