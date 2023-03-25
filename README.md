@@ -6,7 +6,7 @@ https://asaitoshiya.github.io/nostr-seven/
 
 ![carbon.png](carbon.png)
 
-現在は 10 行 (735 バイト) です。
+現在は 10 行 (730 バイト) です。
 
 動作には [NIP-07](https://github.com/nostr-protocol/nips/blob/master/07.md) の拡張機能が必要です。
 
