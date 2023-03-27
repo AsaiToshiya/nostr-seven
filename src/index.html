@@ -1,11 +1,8 @@
-<body id=B onload=W.nostr.getPublicKey().then(m)>
+<body id=B onload=this.nostr.getPublicKey().then(m)>
   <script>
     // JSON オブジェクトのエイリアス
     J = JSON;
     P = J.parse;
-
-    // window オブジェクトのエイリアス
-    W = this;
 
     // イベントの created_at の値を返す関数
     g = e => e.created_at;
