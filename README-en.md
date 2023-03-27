@@ -6,7 +6,7 @@ https://asaitoshiya.github.io/nostr-seven/
 
 ![carbon.png](carbon.png)
 
-Currently it is 10 lines (730 bytes).
+Currently it is 10 lines (717 bytes).
 
 [NIP-07](https://github.com/nostr-protocol/nips/blob/master/07.md) extension is required to work.
 
