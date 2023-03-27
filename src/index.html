@@ -1,8 +1,7 @@
 <body id=B onload=nostr.getPublicKey().then(m)>
   <script>
     // JSON オブジェクトのエイリアス
-    J = JSON;
-    P = J.parse;
+    P = JSON.parse;
 
     // イベントの created_at の値を返す関数
     g = e => e.created_at;
@@ -28,7 +27,7 @@
 
       // REQ を投げる
       w.send(
-        J.stringify([
+        JSON.stringify([
           "REQ",
           "a",                // 適当な subscription_id
           {

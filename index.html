@@ -1,6 +1,6 @@
-<body id=B onload=nostr.getPublicKey().then(m)><script>J=JSON;P=J.parse;g=e=>e.
+<body id=B onload=nostr.getPublicKey().then(m)><script>P=JSON.parse;g=e=>e.
 created_at;m=p=>{a=p&&[p];w.readyState?s(3):setTimeout(m,500)};s=l=>{e=[];k=l;w
-.send(J.stringify(["REQ","a",{authors:a,kinds:[k],limit:[,200][k]}]))};w=new
+.send(JSON.stringify(["REQ","a",{authors:a,kinds:[k],limit:[,200][k]}]))};w=new
 WebSocket("wss://nos.lol");w.onmessage=h=>{[m,,n]=P(h.data);({N:_=>e.push(n),E:
 _=>{e.sort((a,b)=>g(b)-g(a));[_=>{p=e;s(1)},_=>e.map(q=>{a=P(p.find(p=>p.pubkey
 ==q.pubkey)?.content??"{}");B.innerHTML+=`<p>${a.display_name??a.displayName
