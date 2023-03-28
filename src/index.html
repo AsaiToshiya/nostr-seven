@@ -1,23 +1,7 @@
 <body id=B onload=nostr.getPublicKey().then(m)>
   <script>
-    // JSON オブジェクトのエイリアス
-    P = JSON.parse;
-
     // イベントの created_at の値を返す関数
     g = e => e.created_at;
-
-    // メイン関数
-    m = p => {
-      // REQ の filters に渡す authors (グローバル変数)
-      a = p && [p];
-
-      // リレー サーバーに接続されるまで待機する
-      try {
-        s(3)               // REQ を投げる
-      } catch {
-        setTimeout(m, 500) // 再帰する
-      }
-    };
 
     // REQ を投げる関数
     s = l =>
@@ -105,5 +89,21 @@
               )
           ][k]()
       }[m[3]]())
+    };
+
+    // JSON オブジェクトのエイリアス
+    P = JSON.parse;
+
+    // メイン関数
+    m = p => {
+      // REQ の filters に渡す authors (グローバル変数)
+      a = p && [p];
+
+      // リレー サーバーに接続されるまで待機する
+      try {
+        s(3)               // REQ を投げる
+      } catch {
+        setTimeout(m, 500) // 再帰する
+      }
     }
   </script>
