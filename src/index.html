@@ -12,9 +12,11 @@
       a = p && [p];
 
       // リレー サーバーに接続されるまで待機する
-      w.readyState
-        ? s(3)               // REQ を投げる
-        : setTimeout(m, 500) // 再帰する
+      try {
+        s(3)               // REQ を投げる
+      } catch {
+        setTimeout(m, 500) // 再帰する
+      }
     };
 
     // REQ を投げる関数
