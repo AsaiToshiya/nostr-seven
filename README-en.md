@@ -2,13 +2,13 @@
 
 # Seven-line Nostr client (timeline viewer)
 
-https://asaitoshiya.github.io/nostr-seven/
-
 ![carbon.png](carbon.png)
 
-Currently it is 10 lines (717 bytes).
+https://asaitoshiya.github.io/nostr-seven/
 
 [NIP-07](https://github.com/nostr-protocol/nips/blob/master/07.md) extension is required to work.
+
+Currently it is 10 lines (717 bytes).
 
 
 ## License

@@ -2,13 +2,13 @@
 
 # 7 行の Nostr クライアント (タイムライン ビューアー)
 
-https://asaitoshiya.github.io/nostr-seven/
-
 ![carbon.png](carbon.png)
 
-現在は 10 行 (717 バイト) です。
+https://asaitoshiya.github.io/nostr-seven/
 
 動作には [NIP-07](https://github.com/nostr-protocol/nips/blob/master/07.md) の拡張機能が必要です。
+
+現在は 10 行 (717 バイト) です。
 
 
 ## License
