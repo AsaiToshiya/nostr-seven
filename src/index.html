@@ -68,7 +68,7 @@
                   "&amp;1&lt;1&gt;1&nbsp;1<br>" // 置換後の文字列 ("1" 区切り)
                     .split(1)
                     .reduce(
-                      (a, o, i) => a.split("&<> \n"[i]).join(o),
+                      (a, o, i) => a.replaceAll("&<> \n"[i], o),
                       q.content
                     )
                 }</p><p>${
