@@ -1,3 +1,7 @@
+**This repository has moved to https://github.com/AsaiToshiya/nostr-toybox/tree/main/seven.**
+
+---
+
 日本語 | [English](./README-en.md)
 
 # 7 行の Nostr クライアント (タイムライン ビューアー)
